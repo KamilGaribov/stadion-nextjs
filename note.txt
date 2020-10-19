@@ -1,0 +1,17 @@
+icon color: #202124
+red color: #ff3838
+font-family:
+    Lato, sans-serif
+    Proxima Nova, sans-serif
+edit:
+    mobile scroll stadium page
+
+
+to continue:
+        mobile:
+            4 -> home, images, schedule, feedback
+
+
+hover
+pressed
+enabled

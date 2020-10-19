@@ -1,0 +1,175 @@
+.card {
+  height: 14vw;
+  width: 35vw;
+  width: 480px;
+  height: 192px;
+  background-color: white;
+  z-index: 1;
+  float: left;
+  margin-right: 50px;
+  cursor: pointer;
+}
+.card * {
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+  box-sizing: border-box;
+}
+.card .info {
+  position: relative;
+  background-color: #efede7;
+  background-color: white;
+  float: left;
+  height: 100%;
+  width: 40%;
+  padding: 10px 0 0 10px;
+}
+.card .title {
+  font-size: 30px;
+  font-weight: 500;
+  color: #202124;
+  /* background-color: blue; */
+}
+.card .adress {
+  font-size: 20px;
+  font-size: 16px;
+  font-weight: normal;
+  /* margin-top: 30px; */
+  position: absolute;
+  bottom: 30px;
+  /* background-color: blue; */
+  color: #202124;
+}
+.card .price span {
+  font-size: 12px;
+}
+.card .price {
+  font-size: 16px;
+  font-weight: normal;
+  position: absolute;
+  bottom: 10px;
+  color: #202124;
+  /* background-color: red; */
+}
+.card .info .rating {
+  position: relative;
+  left: 0px;
+  /* top: 45px; */
+  /* bottom: 10px; */
+  width: 40%;
+  height: 15px;
+  /* background-color: red; */
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.rating img {
+  width: 15px;
+  height: auto;
+}
+
+.card .avatar {
+  position: relative;
+  width: 60%;
+  height: 100%;
+  float: left;
+  background-color: #006625;
+}
+.card .avatar:after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  /* z-index: 3; */
+  border: 10px solid #efede7;
+  border: 10px solid white;
+  content: "";
+  box-sizing: border-box;
+  transition: all 0.1s ease-in-out 0s;
+  /* display: block; */
+}
+.avatar img {
+  height: 100%;
+  width: auto;
+}
+.card:hover .avatar:after {
+  border: 0px solid white;
+}
+.title_short {
+  font-size: 25px;
+}
+.title_long {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1150px) {
+  .card {
+    width: 400px;
+    height: 160px;
+  }
+  .rating > img {
+    width: 13px;
+  }
+  .title_short {
+    font-size: 22px;
+  }
+  .title_long {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .card {
+    height: 14vw;
+    width: 35vw;
+    width: 480px;
+    height: 192px;
+    width: 300px;
+    height: 120px;
+    margin: 0 15px 15px 0;
+  }
+  .card .info {
+    height: 100%;
+    width: 40%;
+    padding: 5px 0 0 5px;
+  }
+  .card .title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #202124dd;
+  }
+  .card .adress {
+    font-size: 15px;
+    font-weight: norm10al;
+    /* margin-top: 30px; */
+    bottom: 25px;
+    /* background-color: red; */
+    color: #202124bb;
+  }
+  .card .price span {
+    font-size: 10px;
+  }
+  .card .price {
+    font-size: 15px;
+    font-weight: normal;
+    bottom: 5px;
+    color: #202124bb;
+    /* background-color: blue; */
+  }
+  .card .info .rating {
+    bottom: 10px;
+    height: 20px;
+  }
+  .rating img {
+    width: 11px;
+  }
+  .card .avatar:after {
+    border: 5px solid white;
+  }
+  .title_short {
+    font-size: 20px;
+  }
+  .title_long {
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,170 @@
+.select_div {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  width: 300px;
+  width: 100%;
+  height: 50px;
+  border: 1px solid #19b853dd;
+  /* cursor: pointer; */
+  /* margin: 10px 0 30px 10px; */
+  position: relative;
+  z-index: 1;
+  /* background-color: blue; */
+  /* transition: all 0.1s ease-in-out; */
+}
+.select_div *{
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.select_div > .select_error{
+  cursor: default;
+}
+.select_el {
+  height: 100%;
+}
+.icon {
+  /* position: absolute;
+  left: 0;
+  top: 0; */
+  height: 100%;
+  width: 50px;
+  /* background-color: red; */
+  float: left;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  /* z-index: 10; */
+}
+.icon img {
+  width: 40%;
+  height: auto;
+}
+.select_el > input {
+  height: 100%;
+  width: calc(100% - 100px);
+  background-color: white;
+  color: #202124;
+  font-size: 18px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  position: absolute;
+}
+.select_el > label {
+  position: absolute;
+  top: 13px;
+  left: 50px;
+  width: calc(100% - 100px);
+  font-size: 18px;
+  font-size: 16px;
+  /* display: grid; */
+  /* align-content: center; */
+  /* justify-content: center; */
+  color: #202124dd;
+  color: #202124;
+  transition: all 0.1s ease-in-out;
+  /* display: none; */
+}
+.select_arrow {
+  position: relative;
+  top: 22.5px;
+  right: 18.5px;
+  float: right;
+  border: 6px solid transparent;
+  border-color: #19b853 transparent transparent transparent;
+}
+.select_div > .options {
+  position: absolute;
+  position: relative;
+  left: 0;
+  /* bottom: 0; */
+  /* bottom: 0px; */
+  top: 1px;
+  width: 100%;
+  height: 0;
+  height: 200%;
+  height: auto;
+  background-color: aqua;
+  display: none;
+  max-height: 240px;
+  overflow-y: auto;
+}
+.options > li{
+  list-style: none;
+  width: 100%;
+  height: 30px;
+  background-color: #efede7;
+  border: #19b853dd 0.5px solid;
+  border-top: none;
+  padding-left: 5px;
+  display: grid;
+  align-items: center;
+  overflow: hidden;
+  font-size: 16px;
+}
+.options > li:hover{
+  background-color: #19b853;
+  color: white;
+}
+
+.select_div > .select_error{
+  width: 100%;
+  height: 15px;
+  font-size: 12px;
+  color: #ff3838;
+  font-weight: 900;
+  /* background-color: black; */
+}
+
+
+@media screen and (max-width: 1150px) {
+  .select_div{
+    height: 40px !important;
+  }
+  .icon{
+    width: 40px !important;
+  }
+  .select_el > label{
+    font-size: 15px;
+    top: 9px !important;
+    left: 40px !important;
+  }
+  .select_el input{
+    font-size: 15px;
+    width: calc(100% - 80px);
+  }
+  .options > li{
+    font-size: 15px;
+  }
+  .select_arrow{
+    top: 18px !important;
+    right: 15px !important;
+    border-width: 5px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 925px) {
+  .select_div{
+    height: 33px !important;
+  }
+  .icon{
+    width: 33px !important;
+  }
+  .select_el > label{
+    font-size: 14px;
+    top: 7px !important;
+    left: 33px !important;
+  }
+  .select_el input{
+    font-size: 14px;
+    width: calc(100% - 66px);
+  }
+  .options > li{
+    font-size: 14px;
+  }
+  .select_arrow{
+    top: 14px !important;
+    right: 14px !important;
+    border-width: 4px;
+  }
+}
